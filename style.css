@@ -100,6 +100,32 @@ h2 {
 .header__container {
     position: relative;
 }
+
+.header__title-mobile {
+    display: none;
+}
+
+@media(max-width:600px) {
+    .header__container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;   
+    }
+    .header_logo {
+        position: relative;
+        margin: 0 0 auto 0;
+        padding: 0;
+        left: 0;
+    }
+    .header__title-desktop {
+        display: none;  
+    } 
+    .header__title-mobile {
+        display: block;
+        font-size: 1rem;
+        padding-left: 1rem;
+    }
+}
 .nav-toggle {
     display: none;
     position: absolute;
@@ -209,18 +235,23 @@ h2 {
     padding: 2em;
     opacity: .7;
     outline: 1em solid var(--orange);
-    outline-offset: 10px;
-    
+    outline-offset: 10px;  
 }
 .hero_texts p {
     font-family: 'Kaushan Script', cursive;
     font-size: 2em;
     color: var(--white);
     font-weight: bold;
-
-
-   
 }
+
+@media(max-width:600px) {
+    .hero_texts {
+        padding: 1em;
+        font-size: 1.5em;
+    }
+
+}
+
 
 /*ministires*/
 
@@ -549,20 +580,6 @@ input[type=text], select, textarea {
         max-height: 40%;
         min-height: 30%;
     }  
-    .header__container {
-        display: flex;
-        flex-direction: row;
-        align-items: center;   
-    }
-    .header_logo {
-        position: relative;
-        margin: 0 0 auto 0;
-        padding: 0;
-        left: 0;
-    }
-    .header__texts {
-        display: none;  
-    } 
     .member__image {
         width: 100%;
     }

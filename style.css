@@ -467,51 +467,6 @@ input[type=text], select, textarea {
   }
 
 
-  @media (max-width:800px) {
-    .col {
-        width: 40%;
-        max-height: 40%;
-        min-height: 30%;
-        } 
-    }   
-
-@media (max-width:600px) {
-
-    html {
-        scroll-behavior: smooth;
-        scroll-padding-top: 80px;
-    }
-    .col {
-        width: 40%;
-        max-height: 40%;
-        min-height: 30%;
-    }  
-    .header__container {
-        display: flex;
-        flex-direction: row;
-        align-items: center;   
-    }
-    .header_logo {
-        position: relative;
-        margin: 0 0 auto 0;
-        padding: 0;
-        left: 0;
-    }
-    .header__texts {
-        margin-right: auto;
-        padding-left: 1em;
-  
-  
-    } 
-    .header__title {
-        font-size: 1rem;
-    }
-    .member__image {
-        width: 100%;
-    }
-
-}
-
 
   /***********members page******************/
 
@@ -574,6 +529,47 @@ input[type=text], select, textarea {
     background-size: cover;
     background-position: center;
 }
+
+
+@media (max-width:800px) {
+    .col {
+        width: 40%;
+        max-height: 40%;
+        min-height: 30%;
+        } 
+    }   
+
+@media (max-width:600px) {
+
+    html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 80px;
+    }
+    .col {
+        width: 40%;
+        max-height: 40%;
+        min-height: 30%;
+    }  
+    .header__container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;   
+    }
+    .header_logo {
+        position: relative;
+        margin: 0 0 auto 0;
+        padding: 0;
+        left: 0;
+    }
+    .header__texts {
+        display: none;  
+    } 
+    .member__image {
+        width: 100%;
+    }
+
+}
+
 
 .image-pastor {
     background-image: url(/images/jeremiah.jpg);

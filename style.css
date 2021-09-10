@@ -97,7 +97,9 @@ h2 {
     text-shadow: 2px 2px rgba(141, 59, 59, 0.096);
     font-weight: bold;
   }
-
+.header__container {
+    position: relative;
+}
 .nav-toggle {
     display: none;
     position: absolute;
@@ -497,11 +499,12 @@ input[type=text], select, textarea {
     }
     .header__texts {
         margin-right: auto;
-        padding-left: 2.5em;
+        padding-left: 1em;
+  
   
     } 
     .header__title {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
     .member__image {
         width: 100%;

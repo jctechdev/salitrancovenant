@@ -237,6 +237,7 @@ h2 {
     opacity: .7;
     outline: 1em solid var(--orange);
     outline-offset: 10px;  
+    
 }
 .hero_texts p {
     font-family: 'Kaushan Script', cursive;
@@ -386,9 +387,32 @@ blockquote h3:before {
 
 /*about*/
 .about {
-    background-color: var(--green);
+    background-image: url(/img/scbcfam.png);
+    background-position: top;
+    background-size: cover;
+    background-attachment: scroll;
     margin: 0 auto;
     padding-bottom: 2em;
+    position: relative;
+}
+
+.about::after {
+    position: absolute;
+    content: "";
+    background-color: var(--green);
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    opacity: .4;
+}
+
+.about > * {
+    position: relative;
+    z-index: 10;
 }
 .about-title {
     color: var(--orange);
@@ -398,12 +422,14 @@ blockquote h3:before {
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 .about-subtitle {
     font-size: 1.2em;
     color: var(--white);
     text-transform: uppercase;
     font-weight: bolder;
+
 }
 .about-col p {
     font-size: 1em;
@@ -411,7 +437,8 @@ blockquote h3:before {
     width: 80%;
     font-style: italic;
     line-height: 1.4;
-    color: var(--off-white);
+    color: var(--white);
+   
 }
 
 

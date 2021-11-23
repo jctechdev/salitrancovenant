@@ -386,12 +386,12 @@ blockquote h3:before {
 
 /*about*/
 .about {
-    background-color: var(--orange);
+    background-color: var(--green);
     margin: 0 auto;
     padding-bottom: 2em;
 }
 .about-title {
-    color: var(--dark-green);
+    color: var(--orange);
 }
 .about-col {
     margin: 1em 0;
@@ -401,7 +401,7 @@ blockquote h3:before {
 }
 .about-subtitle {
     font-size: 1.2em;
-    color: var(--dark-green);
+    color: var(--white);
     text-transform: uppercase;
     font-weight: bolder;
 }
@@ -411,7 +411,7 @@ blockquote h3:before {
     width: 80%;
     font-style: italic;
     line-height: 1.4;
-    color: var(--dark-green);
+    color: var(--off-white);
 }
 
 
@@ -871,6 +871,14 @@ input[type=text], select, textarea {
 } 
 .image-peter {
     background-image: url(/images/Bro.\ Peter.jpg);
+    background-position: center;
+} 
+.image-kristine {
+    background-image: url(/images/Sis.\ Kristine.jpg);
+    background-position: center;
+} 
+.image-tim {
+    background-image: url(/images/Bro.\ Tim.jpg);
     background-position: center;
 } 
 

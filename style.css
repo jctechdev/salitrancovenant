@@ -13,6 +13,7 @@
     --green: #4d7701;
     --dark-green: #1b2c00;
     --font-handwriting: 'Kaushan Script', cursive;
+    --font-sans: 'Montserrat', sans-serif;
 
 }
 
@@ -317,12 +318,13 @@ h2 {
 .verse {
     background-color: var(--orange);
     margin: 2em 0;
+    padding: 2em 0;
 }
 blockquote {
     border:none;
     font-family: var(--font-handwriting);
     margin-bottom: 2em;
-    color: var(--dark-green);
+    color: var(--off-white);
     padding: 2.5em;
     text-align: right;
     }
@@ -337,9 +339,24 @@ blockquote h3:before {
         content: open-quote;
         font-weight: bold;
         font-size: 1.5em;
-        color:var(--dark-green);
+        color:var(--off-white);
  } 
-
+.verse h2 {
+    font-size: 2em;
+    font-family: var(--font-handwriting);
+    color: var(--off-white);
+    text-align: center;
+}
+.verse a {
+    color: var(--green);
+    font-size: 1em;
+    font-family: var(--font-sans);
+    text-decoration: none;
+}
+.verse a:hover {
+    color: var(--dark-green);
+    font-weight: bolder;
+}
 
  blockquote span {
      font-size: .7em;

@@ -925,6 +925,53 @@ input[type=text], select, textarea {
     background-image: url(/images/Bro.\ Tim.jpg);
     background-position: center;
 } 
+.image-tim {
+    background-image: url(/images/Bro.\ Tim.jpg);
+    background-position: center;
+} 
+.image-flor {
+    background-image: url(/images/Sis.\ Flor.jpg);
+    background-position: center;
+} 
+.image-jek {
+    background-image: url(/images/Sis.\ Jek.jpg);
+    background-position: center;
+} 
+
+.image-cristine {
+    background-image: url(/images/Sis.\ Cristine.png);
+    background-position: center;
+} 
+.image-ramon {
+    background-image: url(/images/Bro.\ Ramon.jpg);
+    background-position: center;
+} 
+.image-marissa {
+    background-image: url(/images/Sis.\ Marissa.jpg);
+    background-position: center;
+} 
+
+.image-jake {
+    background-image: url(/images/Bro.\ Jake.jpg);
+    background-position: center;
+} 
+
+.image-reg {
+    background-image: url(/images/Sis.\ Reg.jpg);
+    background-position: center;
+} 
+.image-junariez {
+    background-image: url(/images/Bro.\ Junariez.jpg);
+    background-position: center;
+} 
+
+.image- {
+    background-image: url(/images/);
+    background-position: center;
+} 
+
+
+
 
 
 

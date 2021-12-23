@@ -258,6 +258,7 @@ h2 {
 }
 
 
+
 /*ministires*/
 
 .table_title {
@@ -556,10 +557,27 @@ input[type=text], select, textarea {
 .main-members-name {
     margin-bottom: .8em;
 }
-.member__description {
+.member-description {
     font-style: italic;
+    font-weight: bold;
 }
 
+
+/*filter options */
+
+.filter-options {
+    width: 70%;
+    margin: 1em auto 0;
+}
+::placeholder {
+    border: var(--orange);
+    padding: 0;
+
+}
+
+.results {
+    color: black;
+}
 
 /*back to top*/
 .button__back {
@@ -594,19 +612,17 @@ input[type=text], select, textarea {
     padding: .5rem 0;
 }
 
-/*members section*/
-
 .member__image {
     border: 3px solid var(--brown);
     margin: 1em auto;
     width: 150px;
     height: 150px;
     background-color: var(--white);
+    object-fit: cover;
     border-radius: 50%;
     background-size: cover;
     background-position: center;
 }
-
 
 @media (max-width:800px) {
     .col {
@@ -633,342 +649,6 @@ input[type=text], select, textarea {
 
 }
 
-
-.image-pastor {
-    background-image: url(/images/jeremiah.jpg);
-}
-
-
-.image-joy {
-    background-image: url(/images/Sis\ Joy.jpg);
-    background-position: top;
-} 
-.image-perry {
-    background-image: url(/images/perry.jpg);
-    background-position: center;
-} 
-
-.image-linda {
-    background-image: url(/images/SIs\ Linda.jpg);
-    background-position: center;
-} 
-.image-jess {
-    background-image: url(/images/Bro.\ Jess.jpg);
-    background-position: right top;
-} 
-
-.image-jonathan {
-    background-image: url(/images/jonathan.jpg);
-    background-position: left;
-} 
-
-.image-helen {
-    background-image: url(/images/Sis.\ Helen.jpg);
-    background-position: center;
-} 
-
-
-.image-troy {
-    background-image: url(/images/Bro.\ Troy.jpg);
-    background-position: center;
-} 
-
-
-.image-vanessa {
-    background-image: url(/images/Sis\ Vanessa.jpg);
-    background-position: center;
-} 
-
-
-.image-harry {
-    background-image: url(/images/Harry.jpg);
-    background-position: center;
-} 
-.image-elizer {
-    background-image: url(/images/Bro\ Elizer.jpg);
-    background-position: top left;
-} 
-
-.image-bons {
-    background-image: url(/images/Jonel.jpg);
-    background-position: center;
-} 
-
-.image-lorenzo {
-    background-image: url(/images/Bro.\ Lorenzo.jpg);
-    background-position: right;
-} 
-
-.image-riza {
-    background-image: url(/images/Sis\ Riza.jpg);
-    background-position: top;
-} 
-
-
-.image-jeff {
-    background-image: url(/images/jeff.jpg);
-    background-position: center;
-} 
-
-
-.image-gloryben {
-    background-image: url(/images/Sis\ Ben\ \(2\).jpg);
-    background-position: center;
-} 
-
-.image-choy {
-    background-image: url(/images/Bro.\ Choi.jpg);
-    background-position: center;
-} 
-
-.image-len {
-    background-image: url(/images/Sis\ Lhen.jpg);
-    background-position: center;
-} 
-
-.image-remy {
-    background-image: url(/images/Sis\ Remy.jpg);
-    background-position: left;
-} 
-
-
-.image-henry {
-    background-image: url(/images/bro.\ Henry.jpg);
-    background-position: center;
-} 
-
-.image-lorna {
-    background-image: url(/images/Sis.\ Lorna.jpg);
-    background-position: center;
-} 
-
-.image-creziel {
-    background-image: url(/images/Sis.\ Creziel.jpg);
-    background-position: center;
-} 
-.image-ruby {
-    background-image: url(/images/Sis.\ Ruby.jpg);
-    background-position: center;
-} 
-
-
-.image-sam {
-    background-image: url(/images/Bro.\ Sam.jpg);
-    background-position: center;
-} 
-
-.image-divine {
-    background-image: url(/images/Sis.\ Divine.jpg);
-    background-position: center;
-} 
-
-.image-cristina {
-    background-image: url(/images/Sis.\ Cristina.jpg);
-    background-position: center;
-} 
-.image-jordan {
-    background-image: url(/images/Bro.\ Jordan.jpg);
-    background-position: center;
-} 
-
-
-.image-jerry {
-    background-image: url(/images/Bro.\ Jerry.jpg);
-    background-position: center;
-} 
-
-.image-doris {
-    background-image: url(/images/Sis.\ Doris.jpg);
-    background-position: center;
-} 
-
-.image-ejoy {
-    background-image: url(/images/Sis.\ Pebbles.jpg);
-    background-position: center;
-} 
-.image-joshua {
-    background-image: url(/images/Bro.\ Joshua.jpg);
-    background-position: center;
-} 
-
-.image-jihan {
-    background-image: url(/images/Sis.\ Jihan.jpg);
-    background-position: center;
-} 
-
-.image-mercy {
-    background-image: url(/images/Sis.\ Mercy.jpg);
-    background-position: center;
-} 
-
-.image-dhon {
-    background-image: url(/images/Bro.\ Dhon.jpg);
-    background-position: center;
-} 
-
-.image-dave {
-    background-image: url(/images/Bro.\ Dave\ 3.jpg);
-    background-position: center;
-} 
-
-.image-kate {
-    background-image: url(/images/Sis\ kate\ 2.jpg);
-    background-position: center;
-} 
-
-.image-psalm {
-    background-image: url(/images/Bro.\ Psalm.jpg);
-    background-position: center;
-} 
-
-.image-joriz {
-    background-image: url(/images/Bro.\ Joriz.jpg);
-    background-position: center;
-} 
-
-.image-gen {
-    background-image: url(/images/Sis.\ Ghen\ 2.jpg);
-    background-position: center;
-} 
-
-.image-bar {
-    background-image: url(/images/Bro.\ Bar\ 2.jpg);
-    background-position: center;
-} 
-
-.image-cj {
-    background-image: url(/images/Bro\ CJ.jpg);
-    background-position: left;
-} 
-
-.image-juni {
-    background-image: url(/images/Sis\ Juni.jpg);
-    background-position: center;
-} 
-
-.image-marisue {
-    background-image: url(/images/Sis.\ Marisue.jpg);
-    background-position: right;
-} 
-
-.image-step {
-    background-image: url(/images/Sis.\ Stef.jpg);
-    background-position: center;
-} 
-
-.image-sarah {
-    background-image: url(/images/Sis.\ Sarah.jpg);
-    background-position: center;
-} 
-
-.image-ghan {
-    background-image: url(/images/bro.\ ghan.jpg);
-    background-position: center;
-} 
-.image-christian {
-    background-image: url(/images/Bro.\ Christian.jpg);
-    background-position: center;
-} 
-.image-shana {
-    background-image: url(/images/Sis.\ Shana.jpg);
-    background-position: center;
-} 
-.image-geno {
-    background-image: url(/images/Bro.\ Geno.jpg);
-    background-position: center;
-} 
-.image-nica {
-    background-image: url(/images/Sis.\ Nica.jpg);
-    background-position: center;
-} 
-.image-jay {
-    background-image: url(/images/Bro.\ Jay.jpg);
-    background-position: center;
-} 
-.image-jam {
-    background-image: url(/images/Sis.\ Jam.jpg);
-    background-position: center;
-} 
-.image-cecille {
-    background-image: url(/images/Sis.\ Cecille.jpg);
-    background-position: center;
-} 
-.image-jc {
-    background-image: url(/images/Bro.\ JC.jpg);
-    background-position: center;
-} 
-.image-jhoven {
-    background-image: url(/images/Bro.\ Jhoven.jpg);
-    background-position: center;
-} 
-.image-david {
-    background-image: url(/images/Bro.\ David.png);
-    background-position: center;
-} 
-.image-randy {
-    background-image: url(/images/Bro.\ Randz.jpg);
-    background-position: center;
-} 
-.image-armel {
-    background-image: url(/images/Bro.\ Armel.jpg);
-    background-position: center;
-} 
-.image-peter {
-    background-image: url(/images/Bro.\ Peter.jpg);
-    background-position: center;
-} 
-.image-kristine {
-    background-image: url(/images/Sis.\ Kristine.jpg);
-    background-position: center;
-} 
-.image-tim {
-    background-image: url(/images/Bro.\ Tim.jpg);
-    background-position: center;
-} 
-.image-tim {
-    background-image: url(/images/Bro.\ Tim.jpg);
-    background-position: center;
-} 
-.image-flor {
-    background-image: url(/images/Sis.\ Flor.jpg);
-    background-position: center;
-} 
-.image-jek {
-    background-image: url(/images/Sis.\ Jek.jpg);
-    background-position: center;
-} 
-
-.image-cristine {
-    background-image: url(/images/Sis.\ Cristine.png);
-    background-position: center;
-} 
-.image-ramon {
-    background-image: url(/images/Bro.\ Ramon.jpg);
-    background-position: center;
-} 
-.image-marissa {
-    background-image: url(/images/Sis.\ Marissa.jpg);
-    background-position: center;
-} 
-
-.image-jake {
-    background-image: url(/images/Bro.\ Jake.jpg);
-    background-position: center;
-} 
-
-.image-reg {
-    background-image: url(/images/Sis.\ Reg.jpg);
-    background-position: center;
-} 
-.image-junariez {
-    background-image: url(/images/Bro.\ Junariez.jpg);
-    background-position: center;
-} 
-
-.image- {
-    background-image: url(/images/);
-    background-position: center;
-} 
 
 
 

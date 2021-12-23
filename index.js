@@ -33,17 +33,3 @@ const sr = ScrollReveal({
 
 sr.reveal('.hero_texts',{delay: 200}); 
 
-/*Thank you message*/
-function message() {
-  const fName = document.getElementById("fname").innerText;
-  const lName = document.getElementById("lname").innerText;
-  const message = document.getElementById("subject").innerText;
-
-  if(fName && lName && message !== " ") {
-    document.getElementById("thanks").innerText = "Thanks for your message!";
-  } else {
-    document.getElementById("thanks").innerText = "The form must be filled out!";
-  }
-   
-  
-  }

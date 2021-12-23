@@ -425,15 +425,35 @@ let members = `[
 
 const membersNew = JSON.parse(members);
 const total = membersNew.length;
+const membersCard = document.getElementById("row");
+const cancel = document.getElementById('clear-result');
+const searchMembers = document.getElementById('searchButton');
+
+const allMembersShow = () => {
+
+  const memberList = membersNew.map(member => 
+    ` <div class="col col_image">
+    <div> <img class="member__image" src="/images/${member.firstname}.jpg"></div>
+    <h2 class="main-members-name">${member.firstname} ${member.lastname}</h2>
+    <p class="member-description">${member.role}</p>
+    <p>Member since: ${member.date}</p>
+  </div>`  
+  )
+  
+  const showMembers = membersCard.innerHTML = memberList;
+  
+}
+
+allMembersShow()
+
 const showTotal = () => { 
   const myText = document.getElementById("showTotal");
   myText.innerText = total;
 } 
 showTotal()
-// 1. store search in a value
-const searchMembers = document.getElementById('searchButton');
-const changeMe = document.getElementById('filter');
-const searchYear = document.getElementById('filter-years');
+
+
+
 
 const findMatches = (wordToMatch, names) => {
   return names.filter(name => {
@@ -443,52 +463,57 @@ const findMatches = (wordToMatch, names) => {
   })
 }
 
-const value1 = searchMembers.value;
-// const value2 = searchYear.value;
 
 const displayMatches = () => {
-  const value = searchMembers.value;
-  const matchArray = findMatches(value, membersNew);
-  const showTotalfind = () => { 
-    const myText = document.getElementById("showTotal");
-    myText.innerText = matchArray.length;
-  }
-  showTotalfind()
+    const value = searchMembers.value;
+    const matchArray = findMatches(value, membersNew);
+    const showTotalfind = () => { 
+      const myText = document.getElementById("showTotal");
+      myText.innerText = matchArray.length;
+    }
+    showTotalfind()
 
-  const html =  matchArray.map(member => 
-    ` <div class="col col_image">
-    <div> <img class="member__image" src="/images/${member.firstname}.jpg"></div>
-    <h2 class="main-members-name">${member.firstname} ${member.lastname}</h2>
-    <p class="member-description">${member.role}</p>
-    <p>Member since: ${member.date}</p>
-      </div>`  
-  )
-  const showMembers = document.getElementById("row").innerHTML = html;
+    const html =  matchArray.map(member => 
+      ` <div class="col col_image">
+      <div> <img class="member__image" src="/images/${member.firstname}.jpg"></div>
+      <h2 class="main-members-name">${member.firstname} ${member.lastname}</h2>
+      <p class="member-description">${member.role}</p>
+      <p>Member since: ${member.date}</p>
+        </div>`  
+    )
+    const showMembers = document.getElementById("row").innerHTML = html;
 
-  if (matchArray.length == 0) {
-    document.getElementById("row").innerHTML = `<h2 class="results">No Results Found</h2>`;
-    console.log('no results');
-  }
-  return showMembers;
+    if (matchArray.length == 0) {
+      document.getElementById("row").innerHTML = `<h2 class="results">No Results Found</h2>`;
+      console.log('no results');
+    } 
+
+    return showMembers;
 }
+
+
+if (searchMembers.value !== "") {
+  console.log('nothing here');
+  cancel.classList.remove('.visible');
+} 
 
 searchMembers.addEventListener('change', displayMatches);
 searchMembers.addEventListener('keyup', displayMatches);
+
+
+
+const clearResult = () => {
+  const clear = searchMembers.value = "";
+  allMembersShow()
+  return clear;
+}
+
+cancel.addEventListener('click', clearResult);
 // searchYear.addEventListener('change', displayMatches(value2));
 
 
 
 
-const memberList = membersNew.map(member => 
-    ` <div class="col col_image">
-    <div> <img class="member__image" src="/images/${member.firstname}.jpg"></div>
-    <h2 class="main-members-name">${member.firstname} ${member.lastname}</h2>
-    <p class="member-description">${member.role}</p>
-    <p>Member since: ${member.date}</p>
-</div>`  
-  )
-
-const showMembers = document.getElementById("row").innerHTML = memberList;
 
 
 // console.log(membersNew[1])

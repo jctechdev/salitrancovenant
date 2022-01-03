@@ -365,61 +365,67 @@ let members = `[
     "firstname": "Kristine",
     "lastname": "Duhaylungsod",
     "role": "Associate Member",
-    "date": "2021"
+    "date": "September 2021"
   },
 {
     "firstname": "Tim",
     "lastname": "Duhaylungsod",
     "role": "Associate Member",
-    "date": "2021"
+    "date": "September 2021"
   },
 {
     "firstname": "Flordeliz",
     "lastname": "Manila",
     "role": "Member",
-    "date": "2021"
+    "date": "December 2021"
   },
 {
     "firstname": "Angelica",
     "lastname": "Fernandez",
     "role": "Member",
-    "date": "2021"
+    "date": "December 2021"
   },
 {
     "firstname": "Cristine",
     "lastname": "Cance",
     "role": "Member",
-    "date": "2021"
+    "date": "December 2021"
   },
 {
     "firstname": "Ramon",
     "lastname": "Musngi",
     "role": "Member",
-    "date": "2021"
+    "date": "December 2021"
   },
 {
     "firstname": "Marissa",
     "lastname": "Musngi",
     "role": "Member",
-    "date": "2021"
+    "date": "December 2021"
   },
 {
     "firstname": "Aries Jake",
     "lastname": "Montilla",
     "role": "Member",
-    "date": "2021"
+    "date": "December 2021"
   },
 {
     "firstname": "Regina",
     "lastname": "Montilla",
     "role": "Member",
-    "date": "2021"
+    "date": "December 2021"
   },
 {
     "firstname": "Junariez",
     "lastname": "Musngi",
     "role": "Member",
-    "date": "2021"
+    "date": "December 2021"
+  },
+  {
+    "firstname": "Vince",
+    "lastname": "Tombaga",
+    "role": "Member",
+    "date": " January 2022"
   }
 ]`
 
@@ -439,9 +445,7 @@ const allMembersShow = () => {
     <p>Member since: ${member.date}</p>
   </div>`  
   )
-  
   const showMembers = membersCard.innerHTML = memberList;
-  
 }
 
 allMembersShow()
@@ -467,11 +471,11 @@ const findMatches = (wordToMatch, names) => {
 const displayMatches = () => {
     const value = searchMembers.value;
     const matchArray = findMatches(value, membersNew);
-    const showTotalfind = () => { 
+    const showTotalResults = () => { 
       const myText = document.getElementById("showTotal");
       myText.innerText = matchArray.length;
     }
-    showTotalfind()
+    showTotalResults()
 
     const html =  matchArray.map(member => 
       ` <div class="col col_image">
